@@ -1,0 +1,130 @@
+<!doctype html>
+<html lang="en-US">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>{% if page.title %}{{ page.title }}{% else %}{{ site.title }} — {{ site.tagline }}{% endif %}</title>
+<meta name="description" content="{{ page.description | default: site.description }}">
+<link rel="canonical" href="{{ site.url }}{{ page.url | replace: 'index.html','' }}">
+<meta name="robots" content="index,follow,max-image-preview:large">
+<meta name="theme-color" content="#0f2433">
+<meta property="og:type" content="{% if page.article %}article{% else %}website{% endif %}">
+<meta property="og:site_name" content="{{ site.title }}">
+<meta property="og:title" content="{{ page.title | default: site.title }}">
+<meta property="og:description" content="{{ page.description | default: site.description }}">
+<meta property="og:url" content="{{ site.url }}{{ page.url | replace: 'index.html','' }}">
+<meta property="og:image" content="{{ site.url }}/assets/img/og.svg">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="/assets/img/favicon.svg" type="image/svg+xml">
+<link rel="manifest" href="/site.webmanifest">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&family=Manrope:wght@400;500;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/assets/css/style.css">
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6620975821265271" crossorigin="anonymous"></script>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@graph":[
+ {"@type":"WebSite","@id":"{{ site.url }}/#site","url":"{{ site.url }}/","name":"{{ site.title }}","description":"{{ site.description }}","inLanguage":"en-US"},
+ {"@type":"Organization","@id":"{{ site.url }}/#org","name":"{{ site.title }}","url":"{{ site.url }}/","logo":"{{ site.url }}/assets/img/favicon.svg","areaServed":{"@type":"Place","name":"ZIP 66221, Overland Park, Kansas"}}{% if page.article %},
+ {"@type":"Article","headline":"{{ page.title | escape }}","description":"{{ page.description | escape }}","datePublished":"{{ page.date_published }}","dateModified":"{{ page.date_modified | default: page.date_published }}","author":{"@type":"Organization","name":"{{ site.title }} Editorial Desk"},"publisher":{"@id":"{{ site.url }}/#org"},"mainEntityOfPage":"{{ site.url }}{{ page.url }}"}{% endif %}
+]}
+</script>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+
+<div class="owner-strip" role="note">
+  <a href="https://web.works/contact" target="_blank" rel="noopener">Contact, if you are interested in this website / domain name / Sponsorship / Advertisement / Partnership</a>
+</div>
+
+<header class="site-head">
+  <div class="wrap head-row">
+    <a class="brand" href="/" aria-label="{{ site.title }} home">
+      <img class="brand-mark" src="/assets/img/favicon.svg" alt="" width="38" height="38">
+      <div><b>66221 Living</b><span>South Overland Park, KS</span></div>
+    </a>
+    <button class="menu-btn" aria-expanded="false" aria-controls="nav">Menu</button>
+    <nav class="nav" id="nav" aria-label="Main">
+      <a href="/zip-66221.html"{% if page.nav == 'zip' %} aria-current="page"{% endif %}>Living Here</a>
+      <a href="/schools.html"{% if page.nav == 'schools' %} aria-current="page"{% endif %}>Schools</a>
+      <a href="/tools.html"{% if page.nav == 'tools' %} aria-current="page"{% endif %}>Tools</a>
+      <a href="/guides/"{% if page.nav == 'guides' %} aria-current="page"{% endif %}>Guides</a>
+      <a href="/videos.html"{% if page.nav == 'videos' %} aria-current="page"{% endif %}>Videos</a>
+      <a href="/community.html"{% if page.nav == 'community' %} aria-current="page"{% endif %}>Community</a>
+      <a href="/contests.html"{% if page.nav == 'contests' %} aria-current="page"{% endif %}>Contests</a>
+      <a href="/support.html"{% if page.nav == 'support' %} aria-current="page"{% endif %}>Support</a>
+      <a class="btn btn-primary btn-sm" href="/get-quotes.html">Get free quotes</a>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+{{ content }}
+</main>
+
+<footer class="site-foot">
+  <div class="wrap">
+    <div class="foot-grid">
+      <div>
+        <a class="brand" href="/" style="color:#fff"><img class="brand-mark" src="/assets/img/favicon.svg" alt="" width="38" height="38"><div><b>66221 Living</b></div></a>
+        <p style="margin-top:12px">Independent guides, calculators and trusted local connections for households in south Overland Park, Kansas — the area served by ZIP 66221.</p>
+        <form data-relay="Newsletter" style="display:flex;gap:8px;flex-wrap:wrap;margin-top:8px">
+          <label class="sr" for="nl-email">Email for the 66221 Weekly</label>
+          <input id="nl-email" type="email" name="email" required placeholder="Get the 66221 Weekly" style="flex:1;min-width:180px">
+          <input class="hp" type="text" name="_honey" tabindex="-1" autocomplete="off" aria-hidden="true">
+          <button class="btn btn-primary btn-sm" type="submit">Subscribe</button>
+          <p class="form-msg" role="status"></p>
+        </form>
+      </div>
+      <div>
+        <h4>Homeowners</h4>
+        <ul>
+          <li><a href="/get-quotes.html">Get 3 free quotes</a></li>
+          <li><a href="/home-value.html">What's my home worth?</a></li>
+          <li><a href="/tools.html">Calculators</a></li>
+          <li><a href="/storm-ready.html">Storm & hail ready</a></li>
+          <li><a href="/guides/">All guides</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Community</h4>
+        <ul>
+          <li><a href="/community.html">Events & directory</a></li>
+          <li><a href="/contests.html">Contests & prizes</a></li>
+          <li><a href="/support.html">Support 66221.com</a></li>
+          <li><a href="/careers.html">Work with us</a></li>
+          <li><a href="/advertise.html">Advertise & sponsor</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>About</h4>
+        <ul>
+          <li><a href="/about.html">About & editorial policy</a></li>
+          <li><a href="/how-we-make-money.html">How we make money</a></li>
+          <li><a href="/contact.html">Contact</a></li>
+          <li><a href="/privacy.html">Privacy policy</a></li>
+          <li><a href="/terms.html">Terms of use</a></li>
+          <li><a href="/disclaimer.html">Disclaimer & trademarks</a></li>
+          <li><a href="/sitemap.html">Sitemap</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="disclosure">
+      <p><strong>Independence & trademark notice.</strong> 66221.com ("66221 Living") is an independent publication. It is not affiliated with, endorsed by or operated by the United States Postal Service, the City of Overland Park, Johnson County Government, Blue Valley Unified School District 229, or any other public agency or business named on this site. "66221" is used only in its descriptive, geographic sense as a postal code. ZIP Code™ is a trademark of the United States Postal Service. All other trademarks, logos and brand names belong to their respective owners and are used for identification only. Embedded videos remain the property of their creators.</p>
+      <p><strong>Advertising disclosure.</strong> This site is supported by display advertising (including Google AdSense), sponsorships and reader support, and may be compensated when you request quotes from local providers. Compensation never changes our editorial content. Information is for general guidance only and is not legal, tax, insurance, financial or real-estate advice.</p>
+      <p>© <span data-year>2026</span> 66221.com. Original text, design and code are protected by copyright. All rights reserved.</p>
+    </div>
+  </div>
+</footer>
+
+<div class="mcta"><a class="btn btn-primary" href="/get-quotes.html">Free quotes</a><a class="btn btn-dark" href="/home-value.html">Home value</a></div>
+
+<div class="cookie" role="dialog" aria-label="Cookie notice">
+  We use cookies for essential site functions and, with your choice, for analytics and personalised advertising from Google and its partners. <a href="/privacy.html#cookies">Learn more</a>.
+  <div class="btns"><button class="btn btn-primary btn-sm" data-cookie="all">Accept all</button><button class="btn btn-ghost btn-sm" data-cookie="essential" style="color:#fff;border-color:#fff">Essential only</button></div>
+</div>
+
+<script src="/assets/js/config.js"></script>
+<script src="/assets/js/main.js" defer></script>
+</body>
+</html>

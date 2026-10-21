@@ -1,0 +1,68 @@
+<form class="form-card" data-relay="Quote request" data-steps novalidate>
+  <div style="display:flex;justify-content:space-between;align-items:center;gap:10px">
+    <span class="step-label">Step 1 of 4</span><span class="small muted">Takes about 60 seconds</span>
+  </div>
+  <div class="progress"><i></i></div>
+
+  <fieldset class="step" data-auto style="border:0;padding:0;margin:0">
+    <legend><h3 style="margin:0">What do you need help with?</h3></legend>
+    <div class="choices">
+      <label class="choice"><input type="radio" name="service" value="Roofing / hail repair" required><span>🏠 Roofing & hail</span></label>
+      <label class="choice"><input type="radio" name="service" value="HVAC"><span>❄️ Heating & A/C</span></label>
+      <label class="choice"><input type="radio" name="service" value="Kitchen / bath remodel"><span>🛁 Kitchen & bath</span></label>
+      <label class="choice"><input type="radio" name="service" value="Basement finishing"><span>🧱 Basement finish</span></label>
+      <label class="choice"><input type="radio" name="service" value="Windows / siding / gutters"><span>🪟 Windows & siding</span></label>
+      <label class="choice"><input type="radio" name="service" value="Fence / deck / patio"><span>🌳 Fence, deck & patio</span></label>
+      <label class="choice"><input type="radio" name="service" value="Lawn / landscaping / irrigation"><span>🌱 Lawn & irrigation</span></label>
+      <label class="choice"><input type="radio" name="service" value="Plumbing / electrical"><span>🔧 Plumbing & electric</span></label>
+      <label class="choice"><input type="radio" name="service" value="Real estate agent (buy or sell)"><span>🔑 Buy or sell a home</span></label>
+      <label class="choice"><input type="radio" name="service" value="Mortgage / refinance"><span>💵 Mortgage & refi</span></label>
+      <label class="choice"><input type="radio" name="service" value="Home insurance review"><span>🛡️ Insurance review</span></label>
+      <label class="choice"><input type="radio" name="service" value="Other home project"><span>✨ Something else</span></label>
+    </div>
+    <div class="form-nav" style="justify-content:flex-end"><button type="button" class="btn btn-dark" data-next>Continue</button></div>
+  </fieldset>
+
+  <fieldset class="step" style="border:0;padding:0;margin:0">
+    <legend><h3>Tell us about the project</h3></legend>
+    <div class="row2">
+      <div class="field"><label for="q-when">When do you want to start?</label>
+        <select id="q-when" name="timeline" required><option value="">Choose…</option><option>Urgent (storm or leak)</option><option>Within 2 weeks</option><option>Within 1–3 months</option><option>3+ months / planning</option></select></div>
+      <div class="field"><label for="q-own">Do you own the home?</label>
+        <select id="q-own" name="homeowner" required><option value="">Choose…</option><option>Yes, I own it</option><option>Buying soon</option><option>No, I rent</option></select></div>
+    </div>
+    <div class="field"><label for="q-budget">Budget range (optional)</label>
+      <select id="q-budget" name="budget"><option value="">Not sure yet</option><option>Under $5,000</option><option>$5,000–$15,000</option><option>$15,000–$40,000</option><option>$40,000–$100,000</option><option>$100,000+</option><option>Insurance claim</option></select></div>
+    <div class="field"><label for="q-desc">Short description</label>
+      <textarea id="q-desc" name="details" placeholder="e.g. Hail on 18 May, adjuster visit scheduled, want a second inspection"></textarea></div>
+    <div class="form-nav"><button type="button" class="btn btn-ghost" data-prev>Back</button><button type="button" class="btn btn-dark" data-next>Continue</button></div>
+  </fieldset>
+
+  <fieldset class="step" style="border:0;padding:0;margin:0">
+    <legend><h3>Where is the property?</h3></legend>
+    <div class="field"><label for="q-addr">Street address <span class="muted">(optional — helps pros quote accurately)</span></label>
+      <input id="q-addr" type="text" name="address" autocomplete="street-address" placeholder="Street address"></div>
+    <div class="row2">
+      <div class="field"><label for="q-city">City</label><input id="q-city" type="text" name="city" value="Overland Park" autocomplete="address-level2"></div>
+      <div class="field"><label for="q-zip">ZIP</label><input id="q-zip" type="text" name="zip" value="66221" inputmode="numeric" pattern="[0-9]{5}" required autocomplete="postal-code"></div>
+    </div>
+    <div class="form-nav"><button type="button" class="btn btn-ghost" data-prev>Back</button><button type="button" class="btn btn-dark" data-next>Continue</button></div>
+  </fieldset>
+
+  <fieldset class="step" style="border:0;padding:0;margin:0">
+    <legend><h3>Where should we send your quotes?</h3></legend>
+    <div class="field"><label for="q-name">Full name</label><input id="q-name" type="text" name="name" required autocomplete="name"></div>
+    <div class="row2">
+      <div class="field"><label for="q-email">Email</label><input id="q-email" type="email" name="email" required autocomplete="email"></div>
+      <div class="field"><label for="q-phone">Mobile phone</label><input id="q-phone" type="tel" name="phone" required autocomplete="tel" pattern="[0-9()+.\- ]{10,}"></div>
+    </div>
+    <div class="field"><label for="q-best">Best time to reach you</label>
+      <select id="q-best" name="best_time"><option>Any time</option><option>Morning</option><option>Afternoon</option><option>Evening</option><option>Email only, please</option></select></div>
+    <label class="consent"><input type="checkbox" name="consent" value="Agreed" required>
+      <span>By checking this box I agree that 66221.com and up to three local providers matched to my request may contact me at the number and email above, including by call or text that may use automated technology. Consent is not a condition of any purchase. Message and data rates may apply; reply STOP to opt out. See our <a href="/privacy.html">Privacy Policy</a>.</span></label>
+    <input class="hp" type="text" name="_honey" tabindex="-1" autocomplete="off" aria-hidden="true">
+    <div class="form-nav"><button type="button" class="btn btn-ghost" data-prev>Back</button><button type="submit" class="btn btn-primary">Get my free quotes</button></div>
+    <p class="form-msg" role="status"></p>
+  </fieldset>
+  <div class="secure"><span>🔒 Encrypted (HTTPS)</span><span>✓ Free, no obligation</span><span>✓ We never sell your info</span></div>
+</form>
