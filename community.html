@@ -1,0 +1,91 @@
+---
+title: "66221 community — events, local business directory & neighbour polls | 66221 Living"
+description: "Submit community events, list your local business serving ZIP 66221, and share what you love about south Overland Park."
+nav: community
+---
+<section class="hero" style="padding-bottom:30px">
+  <div class="wrap">
+    <p class="crumbs"><a href="/">Home</a> / Community</p>
+    <h1>Community</h1>
+    <p class="lede">A neighbour-powered board for south Overland Park: share an event, put your business in front of 66221 households, and tell us what the area needs.</p>
+    <div class="hero-cta"><a class="btn btn-primary" href="#event">Submit an event</a><a class="btn btn-ghost" href="#business">List your business</a></div>
+  </div>
+</section>
+
+<section class="band band-fog">
+  <div class="wrap">
+    <div class="sec-head"><div><h2>Local business directory</h2><p>Categories now accepting listings. Basic listings are free; featured placements support the site.</p></div></div>
+    <div class="grid g4">
+      <div class="card"><div class="ico">🏠</div><h3>Home services</h3><p class="small muted">Roofing, HVAC, plumbing, remodeling, cleaning, lawn care</p></div>
+      <div class="card"><div class="ico">🍽️</div><h3>Food & drink</h3><p class="small muted">Restaurants, coffee, bakeries, catering</p></div>
+      <div class="card"><div class="ico">⚽</div><h3>Kids & activities</h3><p class="small muted">Sports clubs, tutoring, music, camps, childcare</p></div>
+      <div class="card"><div class="ico">🩺</div><h3>Health & wellness</h3><p class="small muted">Dental, fitness, physical therapy, salons</p></div>
+      <div class="card"><div class="ico">🔑</div><h3>Real estate & finance</h3><p class="small muted">Agents, lenders, insurance, financial planning</p></div>
+      <div class="card"><div class="ico">🐾</div><h3>Pets</h3><p class="small muted">Vets, grooming, boarding, trainers</p></div>
+      <div class="card"><div class="ico">🚗</div><h3>Auto</h3><p class="small muted">Repair, detailing, hail dent repair</p></div>
+      <div class="card"><div class="ico">💼</div><h3>Professional</h3><p class="small muted">Legal, tax, IT, printing</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="band">
+  <div class="wrap grid g2">
+    <form class="form-card" id="business" data-relay="Business listing" novalidate>
+      <h2>List your business</h2>
+      <p class="small muted">Reach households in one of the metro's highest-income ZIP codes.</p>
+      <div class="field"><label for="b-name">Business name</label><input id="b-name" type="text" name="business" required></div>
+      <div class="row2">
+        <div class="field"><label for="b-cat">Category</label><select id="b-cat" name="category" required><option value="">Choose…</option><option>Home services</option><option>Food & drink</option><option>Kids & activities</option><option>Health & wellness</option><option>Real estate & finance</option><option>Pets</option><option>Auto</option><option>Professional</option></select></div>
+        <div class="field"><label for="b-tier">Listing type</label><select id="b-tier" name="tier"><option>Free basic listing</option><option>Featured listing ($49/mo)</option><option>Category sponsor ($199/mo)</option><option>Lead partner (pay per lead)</option></select></div>
+      </div>
+      <div class="field"><label for="b-site">Website</label><input id="b-site" type="url" name="website" placeholder="https://"></div>
+      <div class="row2">
+        <div class="field"><label for="b-contact">Your name</label><input id="b-contact" type="text" name="name" required></div>
+        <div class="field"><label for="b-email">Email</label><input id="b-email" type="email" name="email" required></div>
+      </div>
+      <div class="field"><label for="b-phone">Phone</label><input id="b-phone" type="tel" name="phone"></div>
+      <label class="consent"><input type="checkbox" name="confirm" value="Yes" required><span>I confirm I'm authorised to list this business and that it holds any required licences and insurance.</span></label>
+      <input class="hp" type="text" name="_honey" tabindex="-1" autocomplete="off" aria-hidden="true">
+      <button class="btn btn-primary btn-block" type="submit">Submit my listing</button>
+      <p class="form-msg" role="status"></p>
+    </form>
+
+    <form class="form-card" id="event" data-relay="Event submission" novalidate>
+      <h2>Submit a community event</h2>
+      <p class="small muted">Free for schools, HOAs, nonprofits, faith groups and local businesses. We review every submission.</p>
+      <div class="field"><label for="e-title">Event name</label><input id="e-title" type="text" name="event" required></div>
+      <div class="row2">
+        <div class="field"><label for="e-date">Date</label><input id="e-date" type="text" name="date" placeholder="e.g. Sat, Nov 14, 10am–2pm" required></div>
+        <div class="field"><label for="e-cost">Cost</label><input id="e-cost" type="text" name="cost" placeholder="Free / $10"></div>
+      </div>
+      <div class="field"><label for="e-where">Location</label><input id="e-where" type="text" name="location" required></div>
+      <div class="field"><label for="e-desc">Description</label><textarea id="e-desc" name="details" required></textarea></div>
+      <div class="row2">
+        <div class="field"><label for="e-name">Organizer name</label><input id="e-name" type="text" name="name" required></div>
+        <div class="field"><label for="e-email">Email</label><input id="e-email" type="email" name="email" required></div>
+      </div>
+      <input class="hp" type="text" name="_honey" tabindex="-1" autocomplete="off" aria-hidden="true">
+      <button class="btn btn-dark btn-block" type="submit">Submit event</button>
+      <p class="form-msg" role="status"></p>
+    </form>
+  </div>
+</section>
+
+<section class="band band-fog">
+  <div class="wrap" style="max-width:760px">
+    <form class="form-card" data-relay="Neighbour poll" novalidate>
+      <h2>Neighbour poll: what should 66221 get next?</h2>
+      <div class="choices">
+        <label class="choice"><input type="radio" name="vote" value="More trails & parks" required><span>🌳 More trails & parks</span></label>
+        <label class="choice"><input type="radio" name="vote" value="Local restaurants"><span>🍽️ Local restaurants</span></label>
+        <label class="choice"><input type="radio" name="vote" value="Better traffic flow"><span>🚦 Better traffic flow</span></label>
+        <label class="choice"><input type="radio" name="vote" value="Community events"><span>🎉 Community events</span></label>
+      </div>
+      <div class="field"><label for="p-why">Anything to add? (optional)</label><textarea id="p-why" name="comment" style="min-height:70px"></textarea></div>
+      <div class="field"><label for="p-email">Email (optional, for results)</label><input id="p-email" type="email" name="email"></div>
+      <input class="hp" type="text" name="_honey" tabindex="-1" autocomplete="off" aria-hidden="true">
+      <button class="btn btn-primary" type="submit">Cast my vote</button>
+      <p class="form-msg" role="status"></p>
+    </form>
+  </div>
+</section>
