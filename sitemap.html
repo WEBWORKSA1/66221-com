@@ -1,0 +1,11 @@
+---
+title: "Sitemap | 66221 Living"
+description: "Every page on 66221.com."
+---
+<section class="band"><div class="wrap article">
+  <h1>Sitemap</h1>
+  <ul>
+  {% assign pages = site.pages | sort: "url" %}
+  {% for p in pages %}{% if p.title and p.sitemap != false %}<li><a href="{{ p.url }}">{{ p.title | split: ' | ' | first | split: ' — ' | first }}</a></li>{% endif %}{% endfor %}
+  </ul>
+</div></section>
