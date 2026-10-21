@@ -1,0 +1,142 @@
+---
+title: "Free 66221 calculators — mortgage, Kansas property tax, roof cost, seller net | 66221 Living"
+description: "Free calculators tuned for ZIP 66221 and Johnson County, Kansas: mortgage with property tax and PMI, affordability meter, property tax estimator, hail roof cost, seller net proceeds and rent vs buy."
+nav: tools
+---
+<section class="hero" style="padding-bottom:28px">
+  <div class="wrap">
+    <p class="crumbs"><a href="/">Home</a> / Tools</p>
+    <h1>Calculators built for 66221</h1>
+    <p class="lede">Every tool uses Kansas rules — like the 11.5% residential assessment rate — so the numbers look like what you'll actually pay. Results update as you type.</p>
+    <div class="hero-cta"><a class="btn btn-ghost btn-sm" href="#mortgage">Mortgage</a><a class="btn btn-ghost btn-sm" href="#tax">Property tax</a><a class="btn btn-ghost btn-sm" href="#roof">Roof cost</a><a class="btn btn-ghost btn-sm" href="#net">Seller net</a><a class="btn btn-ghost btn-sm" href="#rentbuy">Rent vs buy</a></div>
+  </div>
+</section>
+
+<section class="band" id="mortgage">
+  <div class="wrap grid g2">
+    <div class="tool">
+      <h2>Mortgage + affordability</h2>
+      <div class="row2">
+        <div class="field"><label for="m-price">Home price ($)</label><input id="m-price" type="number" value="670000" step="5000" min="0"></div>
+        <div class="field"><label for="m-down">Down payment (%) — <span id="m-downval"></span></label><input id="m-down" type="range" min="0" max="50" value="20"></div>
+        <div class="field"><label for="m-rate">Interest rate (%)</label><input id="m-rate" type="number" value="6.5" step="0.05"></div>
+        <div class="field"><label for="m-term">Term (years)</label><select id="m-term"><option>30</option><option>20</option><option>15</option></select></div>
+        <div class="field"><label for="m-mills">Total mill levy</label><input id="m-mills" type="number" value="125" step="0.5"></div>
+        <div class="field"><label for="m-ins">Home insurance ($/yr)</label><input id="m-ins" type="number" value="3600" step="100"></div>
+        <div class="field"><label for="m-hoa">HOA ($/mo)</label><input id="m-hoa" type="number" value="60" step="5"></div>
+        <div class="field"><label for="m-income">Household income ($/yr)</label><input id="m-income" type="number" value="198000" step="1000"></div>
+      </div>
+      <div class="tool-out">
+        <span class="small muted">Estimated monthly payment · loan <span id="m-loan"></span></span><b id="m-total">—</b>
+        <div class="bar" id="m-bar"></div>
+        <div class="legend"><span style="--c:var(--ink)">P&amp;I <b id="m-pi"></b></span><span style="--c:var(--wheat)">Tax <b id="m-tax"></b></span><span style="--c:var(--prairie)">Insurance <b id="m-insout"></b></span><span style="--c:var(--alert)">PMI <b id="m-pmi"></b></span><span style="--c:var(--sky)">HOA <b id="m-hoaout"></b></span></div>
+        <p style="margin:10px 0 0;font-weight:700" id="m-dti"></p>
+      </div>
+      <a class="btn btn-primary btn-block" style="margin-top:14px" href="/get-quotes.html?service=Mortgage%20%2F%20refinance">Get a real rate quote — no hard pull</a>
+    </div>
+    <div class="article">
+      <h3>How to read the result</h3>
+      <p>Lenders look at your housing payment as a share of gross monthly income. A common guideline is to keep housing at or below 28% and all debts at or below 36%. The meter labels your result <em>Comfortable</em> (≤28%), <em>Stretch</em> (28–36%) or <em>Difficult</em> (&gt;36%).</p>
+      <h3>Assumptions</h3>
+      <ul>
+        <li><strong>Property tax</strong> = price × 11.5% × levy ÷ 1,000. The 125-mill default is a planning placeholder for south Overland Park in Blue Valley USD 229; check your tax statement for the exact figure.</li>
+        <li><strong>PMI</strong> is applied below 20% down at 0.6% of the loan per year — actual PMI depends on credit score and loan type.</li>
+        <li><strong>Insurance</strong> in Kansas is often higher than the national average because of hail and wind risk. Get real quotes before you commit.</li>
+      </ul>
+      <p class="small muted">Results are estimates for education only and are not a loan offer or financial advice.</p>
+    </div>
+  </div>
+</section>
+
+<section class="band band-fog" id="tax">
+  <div class="wrap grid g2">
+    <div class="tool">
+      <h2>Kansas property tax estimator</h2>
+      <div class="row2">
+        <div class="field"><label for="t-value">County appraised value ($)</label><input id="t-value" type="number" value="670000" step="5000"></div>
+        <div class="field"><label for="t-mills">Total mill levy</label><input id="t-mills" type="number" value="125" step="0.5"></div>
+      </div>
+      <div class="grid g2">
+        <div class="tool-out"><span class="small muted">Assessed value (11.5%)</span><b id="t-assessed">—</b></div>
+        <div class="tool-out"><span class="small muted">Estimated annual tax</span><b id="t-year">—</b></div>
+        <div class="tool-out"><span class="small muted">Each half-payment</span><b id="t-half">—</b></div>
+        <div class="tool-out"><span class="small muted">Monthly escrow equivalent</span><b id="t-month">—</b></div>
+      </div>
+    </div>
+    <div class="article">
+      <h3>Where the mills come from</h3>
+      <p>Your levy is the sum of every taxing body for your address: the State of Kansas, Johnson County, the City of Overland Park (14.5 mills in its 2026 budget), your school district, the community college, library, parks and other special districts. One mill is $1 of tax per $1,000 of assessed value.</p>
+      <p>Before you rely on the estimate, note that the state exempts part of a home's value from the statewide school levy, so actual bills can be slightly lower. Read the full breakdown in <a href="/guides/property-taxes-66221.html">How property tax works in 66221</a>.</p>
+    </div>
+  </div>
+</section>
+
+<section class="band" id="roof">
+  <div class="wrap grid g2">
+    <div class="tool">
+      <h2>Hail roof replacement estimator</h2>
+      <div class="row2">
+        <div class="field"><label for="r-sqft">Home footprint (sq ft)</label><input id="r-sqft" type="number" value="2200" step="50"></div>
+        <div class="field"><label for="r-pitch">Roof pitch</label><select id="r-pitch"><option value="1.15">Low (4/12)</option><option value="1.3" selected>Medium (6–8/12)</option><option value="1.5">Steep (10/12+)</option></select></div>
+        <div class="field"><label for="r-mat">Material</label><select id="r-mat"><option value="arch">Architectural shingle</option><option value="impact">Class 4 impact-rated shingle</option><option value="metal">Standing-seam metal</option></select></div>
+        <div class="field"><label for="r-ded">Deductible ($ or %)</label><input id="r-ded" type="number" value="1" step="0.5"></div>
+        <div class="field"><label for="r-home">Dwelling coverage ($) — for % deductibles</label><input id="r-home" type="number" value="650000" step="10000"></div>
+      </div>
+      <div class="tool-out"><span class="small muted" id="r-area"></span><b id="r-range">—</b><p class="small" style="margin:6px 0 0" id="r-oop"></p></div>
+      <a class="btn btn-primary btn-block" style="margin-top:14px" href="/get-quotes.html?service=Roofing%20%2F%20hail%20repair">Get roofing quotes</a>
+    </div>
+    <div class="article">
+      <h3>Why ranges are wide</h3>
+      <p>Roof area is footprint × a pitch factor plus overhangs. Steep roofs, multiple layers, decking replacement, skylights and gutters all move the price. Many Kansas policies now carry percentage wind/hail deductibles (often 1–2% of dwelling coverage) — enter a value of 100 or less to treat it as a percentage.</p>
+      <p>See the full <a href="/guides/roof-replacement-cost-overland-park.html">roof cost guide</a> and the <a href="/guides/hail-roof-claim-guide.html">hail claim playbook</a>.</p>
+    </div>
+  </div>
+</section>
+
+<section class="band band-fog" id="net">
+  <div class="wrap grid g2">
+    <div class="tool">
+      <h2>Seller net-proceeds calculator</h2>
+      <div class="row2">
+        <div class="field"><label for="n-price">Expected sale price ($)</label><input id="n-price" type="number" value="850000" step="5000"></div>
+        <div class="field"><label for="n-owed">Mortgage payoff ($)</label><input id="n-owed" type="number" value="380000" step="5000"></div>
+        <div class="field"><label for="n-comm">Total commissions (%)</label><input id="n-comm" type="number" value="5.5" step="0.25"></div>
+        <div class="field"><label for="n-close">Seller closing costs (%)</label><input id="n-close" type="number" value="1.2" step="0.1"></div>
+        <div class="field"><label for="n-rep">Repairs / concessions ($)</label><input id="n-rep" type="number" value="8000" step="500"></div>
+      </div>
+      <div class="grid g3">
+        <div class="tool-out"><span class="small muted">Commissions</span><b id="n-commout">—</b></div>
+        <div class="tool-out"><span class="small muted">Closing costs</span><b id="n-closeout">—</b></div>
+        <div class="tool-out"><span class="small muted">Estimated net</span><b id="n-net">—</b></div>
+      </div>
+      <a class="btn btn-primary btn-block" style="margin-top:14px" href="/home-value.html">Get a free local value estimate</a>
+    </div>
+    <div class="article">
+      <h3>What sellers forget</h3>
+      <p>Commissions are negotiable and, since 2024 industry changes, buyer-agent compensation is negotiated separately rather than assumed. Also budget for prorated property taxes, title charges, HOA transfer fees and any inspection-driven repairs. Read <a href="/guides/selling-your-home-66221.html">Selling a home in 66221</a>.</p>
+    </div>
+  </div>
+</section>
+
+<section class="band" id="rentbuy">
+  <div class="wrap grid g2">
+    <div class="tool">
+      <h2>Rent vs buy</h2>
+      <div class="row2">
+        <div class="field"><label for="rb-rent">Monthly rent ($)</label><input id="rb-rent" type="number" value="3200" step="50"></div>
+        <div class="field"><label for="rb-price">Home price ($)</label><input id="rb-price" type="number" value="670000" step="5000"></div>
+        <div class="field"><label for="rb-years">Years you'll stay</label><input id="rb-years" type="number" value="7" min="1" max="30"></div>
+        <div class="field"><label for="rb-app">Home appreciation (%/yr)</label><input id="rb-app" type="number" value="3" step="0.5"></div>
+      </div>
+      <div class="grid g2">
+        <div class="tool-out"><span class="small muted">Net cost of owning</span><b id="rb-own">—</b></div>
+        <div class="tool-out"><span class="small muted">Total rent paid</span><b id="rb-rentout">—</b></div>
+      </div>
+      <p style="font-weight:800;margin-top:12px" id="rb-verdict"></p>
+    </div>
+    <div class="article">
+      <h3>Method</h3>
+      <p>Owning assumes 20% down at 6.5% for 30 years, a 125-mill levy, 0.45% of value a year for insurance, 1% for maintenance, 3% buying costs, 7% selling costs, and the lost return on your down payment at 4.5%. Rent rises 3.5% a year. Equity build-up and appreciation are credited back. It's a simplified model — use it to frame the question, not to decide it.</p>
+    </div>
+  </div>
+</section>
