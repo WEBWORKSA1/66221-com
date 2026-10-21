@@ -1,0 +1,16 @@
+title: 66221 Living
+tagline: Your guide to south Overland Park, Kansas
+description: Independent guides, calculators, school info, storm prep and free local quotes for households in ZIP 66221, south Overland Park, Kansas.
+url: https://66221.com
+baseurl: ""
+plugins:
+  - jekyll-sitemap
+exclude:
+  - README.md
+  - PROMPTS.md
+  - .gitignore
+defaults:
+  - scope:
+      path: ""
+    values:
+      layout: default
